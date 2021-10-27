@@ -1,0 +1,21 @@
+.paw-rating-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.paws {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: hsl(45, 44%, 50%);
+}
+
+.paw-rating-wrapper::before,
+.paws::before {
+  font-size: 3em;
+  /* Font-Awesome has sharper corners  */
+  font-family: "FontAwesome 5 free";
+  content: "\2605 \20 \2605 \20 \2605 \20 \2605 \20 \2605";
+}
