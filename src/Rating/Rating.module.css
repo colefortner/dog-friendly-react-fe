@@ -1,3 +1,5 @@
+@import url("https://use.fontawesome.com/releases/v5.15.4/css/all.css");
+
 .paw-rating-wrapper {
   position: relative;
   display: inline-block;
@@ -15,7 +17,7 @@
 .paw-rating-wrapper::before,
 .paws::before {
   font-size: 3em;
-  /* Font-Awesome has sharper corners  */
-  font-family: "FontAwesome 5 free";
-  content: "\2605 \20 \2605 \20 \2605 \20 \2605 \20 \2605";
+  font-family: "Font Awesome 5 Free";
+  content: "\f1b0 \20 \f1b0 \20 \f1b0 \20 \f1b0 \20 \f1b0";
+  font-weight: 900;
 }
