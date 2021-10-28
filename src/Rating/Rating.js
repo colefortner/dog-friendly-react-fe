@@ -1,7 +1,15 @@
 import styles from "./Rating.module.css";
 
 const Rating = (props) => {
-  const rating = (props.rating / 5) * 100;
+  let rating;
+
+  if (props.rating % 1 !== 0) {
+    rating = (props.rating / 5) * 100 + 1;
+  } else {
+    rating = (props.rating / 5) * 100;
+  }
+
+  console.log(rating);
 
   return (
     <span className={styles["paw-rating-wrapper"]}>
