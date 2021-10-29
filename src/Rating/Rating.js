@@ -4,7 +4,7 @@ const Rating = (props) => {
   let rating;
 
   if (props.rating % 1 !== 0) {
-    rating = (props.rating / 5) * 100 + 1;
+    rating = (props.rating / 5) * 100 + 1.5;
   } else {
     rating = (props.rating / 5) * 100;
   }

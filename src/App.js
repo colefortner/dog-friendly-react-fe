@@ -1,8 +1,8 @@
-import BusinessCard from "./BusinessCard/BusinessCard";
 import "./App.css";
+import Businesses from "./Businesses/Businesses";
 
 function App() {
-  const card = [
+  const cards = [
     {
       businessName: "Three Daughters Brewing",
       businessPicture:
@@ -23,7 +23,7 @@ function App() {
 
   return (
     <div className="App">
-      <BusinessCard businessCard={card} />
+      <Businesses businessCard={cards} />
     </div>
   );
 }
