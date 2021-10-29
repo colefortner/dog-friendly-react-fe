@@ -1,5 +1,7 @@
 import "./App.css";
+import Navbar from "./Navbar/Navbar";
 import Businesses from "./Businesses/Businesses";
+import Header from "./Header/Header";
 
 function App() {
   const cards = [
@@ -23,6 +25,8 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar />
+      <Header />
       <Businesses businessCard={cards} />
     </div>
   );
