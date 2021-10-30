@@ -2,6 +2,8 @@ import "./App.css";
 import Navbar from "./Navbar/Navbar";
 import Businesses from "./Businesses/Businesses";
 import Header from "./Header/Header";
+import { Route } from "react-router-dom";
+import BusinessShowPage from "./Business/BusinessShowPage";
 
 function App() {
   const cards = [
@@ -30,6 +32,9 @@ function App() {
       </div>
       <Header />
       <Businesses businessCard={cards} />
+      <Route path="/showpage">
+        <BusinessShowPage />
+      </Route>
     </div>
   );
 }
