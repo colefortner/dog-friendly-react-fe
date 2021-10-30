@@ -25,7 +25,9 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <div class="nav">
+        <Navbar />
+      </div>
       <Header />
       <Businesses businessCard={cards} />
     </div>
