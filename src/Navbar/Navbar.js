@@ -1,4 +1,5 @@
 import styles from "./Navbar.module.css";
+import { NavLink } from "react-router-dom";
 
 const Navbar = (props) => {
   return (
@@ -6,19 +7,29 @@ const Navbar = (props) => {
       <div className={styles.logo}>Future Navbar</div>
       <ul>
         <li>
-          <a href="#">Home</a>
+          <NavLink activeClassName={styles.active} to="#">
+            Home
+          </NavLink>
         </li>
         <li>
-          <a href="#">Dashboard</a>
+          <NavLink activeClassName={styles.active} to="#">
+            Dashboard
+          </NavLink>
         </li>
         <li>
-          <a href="#">Login/SignUp</a>
+          <NavLink activeClassName={styles.active} to="#">
+            Login/SignUp
+          </NavLink>
         </li>
         <li>
-          <a href="#">Profile</a>
+          <NavLink activeClassName={styles.active} to="#">
+            Profile
+          </NavLink>
         </li>
         <li>
-          <a href="#">Wildcard</a>
+          <NavLink activeClassName={styles.active} to="/showpage">
+            B Show Page
+          </NavLink>
         </li>
       </ul>
     </div>

@@ -34,3 +34,11 @@
   text-decoration: none;
   text-transform: uppercase;
 }
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+  font-weight: bold;
+  padding-bottom: 0.25rem;
+  border-bottom: 4px solid white;
+}
