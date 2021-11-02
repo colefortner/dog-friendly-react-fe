@@ -9,6 +9,7 @@ const BusinessList = (props) => {
       {cards.map((card) => (
         <BusinessCard
           key={card.id}
+          businessId={card.businessId}
           name={card.businessName}
           picture={card.businessPicture}
           rating={card.businessRating}

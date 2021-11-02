@@ -7,27 +7,27 @@ const Navbar = (props) => {
       <div className={styles.logo}>Future Navbar</div>
       <ul>
         <li>
-          <NavLink activeClassName={styles.active} to="#">
+          <NavLink activeClassName={styles.active} to="/">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName={styles.active} to="#">
+          <NavLink activeClassName={styles.active} to="/dashboard">
             Dashboard
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName={styles.active} to="#">
+          <NavLink activeClassName={styles.active} to="/login">
             Login/SignUp
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName={styles.active} to="#">
+          <NavLink activeClassName={styles.active} to="/profile">
             Profile
           </NavLink>
         </li>
         <li>
-          <NavLink activeClassName={styles.active} to="/showpage">
+          <NavLink activeClassName={styles.active} to="/showpage/:businessId">
             B Show Page
           </NavLink>
         </li>
