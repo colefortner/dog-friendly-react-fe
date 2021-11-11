@@ -8,12 +8,15 @@ const BusinessCard = (props) => {
     <li class={styles["card-container"]}>
       <Card>
         <div>
-          <h2>{props.name}</h2>
-          <img src={props.picture} alt="Business" />
-          <div>Rating: {props.rating}</div>
+          <h2 class={styles.name}>{props.name}</h2>
+          <div class={styles["image-container"]}>
+            <img src={props.picture} alt="Business" />
+          </div>
+          <div class={styles.rating}>Rating: {props.rating}</div>
           <div>{props.address}</div>
           <div>{props.phone}</div>
           <Rating rating={props.rating} />
+          <div></div>
           <Link
             to={{
               pathname: `/showpage/${props.businessId}`,
