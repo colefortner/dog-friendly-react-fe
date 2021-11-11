@@ -13,8 +13,8 @@ const BusinessCard = (props) => {
             <img src={props.picture} alt="Business" />
           </div>
           <div class={styles.rating}>Rating: {props.rating}</div>
-          <div>{props.address}</div>
-          <div>{props.phone}</div>
+          <div class={styles.address}>{props.address}</div>
+          <div class={styles.phone}>{props.phone}</div>
           <Rating rating={props.rating} />
           <div></div>
           <Link
