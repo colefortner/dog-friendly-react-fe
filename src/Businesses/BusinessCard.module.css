@@ -1,14 +1,14 @@
 .card-container {
   display: inline-block;
-  flex-wrap: wrap;
-  border: 1px solid black;
+  border: 1px solid hsl(0, 25%, 86%);
+  border-radius: 5px;
   margin-left: 2em;
   margin-top: 2em;
 }
 
 .image-container {
   height: 250px;
-  width: 300px;
+  width: 250px;
   margin: auto;
   margin-bottom: 20px;
 }
@@ -16,7 +16,7 @@
 .card-container img {
   height: 100%;
   width: 100%;
-  border-radius: 3%;
+  border-radius: 10%;
   object-fit: cover;
 }
 
@@ -34,4 +34,9 @@
 
 .phone {
   margin-bottom: 5px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
 }

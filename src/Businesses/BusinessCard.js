@@ -8,14 +8,15 @@ const BusinessCard = (props) => {
     <li class={styles["card-container"]}>
       <Card>
         <div>
-          <h2 class={styles.name}>{props.name}</h2>
           <div class={styles["image-container"]}>
             <img src={props.picture} alt="Business" />
           </div>
-          <div class={styles.rating}>Rating: {props.rating}</div>
-          <div class={styles.address}>{props.address}</div>
-          <div class={styles.phone}>{props.phone}</div>
+          <h2 class={styles.name}>{props.name}</h2>
           <Rating rating={props.rating} />
+          <div class={styles.phone}>{props.phone}</div>
+          {/* <div class={styles.rating}>Rating: {props.rating}</div> */}
+          <div class={styles.address}>{props.address1}</div>
+          <div class={styles.address}>{props.address2}</div>
           <div></div>
           <Link
             to={{
@@ -25,7 +26,8 @@ const BusinessCard = (props) => {
               }
             }}
           >
-            {props.name} info
+            {/* {props.name}  */}
+            More
           </Link>
         </div>
       </Card>

@@ -14,7 +14,8 @@ const BusinessList = (props) => {
           picture={card.businessPicture}
           rating={card.businessRating}
           phone={card.businessPhone}
-          address={card.businessAddress}
+          address1={card.businessAddress1}
+          address2={card.businessAddress2}
         />
       ))}
     </ul>
